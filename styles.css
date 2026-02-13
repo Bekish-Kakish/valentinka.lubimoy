@@ -597,3 +597,112 @@ body{
 .val-btn:hover{
   transform: scale(1.1);
 }
+
+/* =========================
+   Mobile / Responsive tweaks
+   ========================= */
+@media (max-width: 768px){
+  .panel{
+    width: 94vw;
+    margin: 4vh auto 0;
+    height: 90vh;
+    padding: 22px 18px;
+  }
+  .screen{
+    padding: 22px 18px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .hub-grid{
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .folders{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+  .window-body .note{
+    font-size: 16px;
+    line-height: 1.65;
+  }
+  .playlist-layout{
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .vinyl{
+    width: 220px;
+    height: 220px;
+    margin: 0 auto;
+  }
+  .embed-card{
+    min-height: 220px;
+  }
+  .photo-grid{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+  .notes-row{
+    flex-wrap: wrap;
+    gap: 14px;
+    justify-content: center;
+  }
+  .note-card{
+    width: 200px;
+    height: 210px;
+  }
+  .back-btn{
+    width: 56px;
+    height: 56px;
+    left: 10px;
+    top: 10px;
+  }
+}
+
+@media (max-width: 480px){
+  .panel{
+    width: 96vw;
+    height: 92vh;
+    margin: 3vh auto 0;
+    padding: 18px 14px;
+    border-radius: 26px;
+  }
+  .screen{
+    padding: 18px 14px;
+  }
+  .pixel-title{
+    letter-spacing: 2px;
+  }
+  .pixel-sub{
+    font-size: 14px;
+  }
+  .photo-grid{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .photo-tile{
+    height: 150px;
+  }
+  .photo-caption{
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 1.6;
+  }
+  .vinyl{
+    width: 190px;
+    height: 190px;
+  }
+  .embed-card{
+    min-height: 200px;
+  }
+  .cta{
+    width: min(320px, 86vw);
+  }
+  .note-card{
+    width: 170px;
+    height: 190px;
+  }
+  .note-gif{
+    height: 120px;
+  }
+}
+
